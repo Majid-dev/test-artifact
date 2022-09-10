@@ -18,5 +18,5 @@ jobs:
       - name: uploud artifact
         uses: actions/upload-artifact@v3
         with:
-          name: $ARTIFACT_FILE
+          name: ${{ env.ARTIFACT_FILE }}
           path: .
