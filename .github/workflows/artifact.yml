@@ -10,11 +10,11 @@ env:
 
 jobs:
   job1:
-    name: myjob
+    name: Upload Artifact
     runs-on: ubuntu-latest
     steps:
       - name: check out
-        uses: action/checkout@v3
+        uses: actions/checkout@v2
       - name: uploud artifact
         uses: actions/upload-artifact@v3
         with:
